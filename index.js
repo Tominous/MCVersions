@@ -36,7 +36,7 @@ const check_versions = function(callback) {
                 console.log('Latest Snapshot: ' + data.latest.snapshot);
                 console.log('Latest Release: ' + data.latest.release);
 
-                // known_versions.shift();
+                 known_versions.shift();
                 for( let version of data.versions ) {
                     if( known_versions.indexOf(version.id) === -1 ) {
                         console.log('New version detected: ' + version.id);
